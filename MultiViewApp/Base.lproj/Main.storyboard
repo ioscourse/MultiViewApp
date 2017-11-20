@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiViewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pmn-81-BWq">
+                                <rect key="frame" x="0.0" y="29" width="665" height="324"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jl9-GE-Ypw" customClass="View1" customModule="MultiViewApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="665" height="108"/>
+                                        <subviews>
+                                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCb-BK-3Z1">
+                                                <rect key="frame" x="0.0" y="-10" width="665" height="128"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </webView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="qCb-BK-3Z1" firstAttribute="top" secondItem="Jl9-GE-Ypw" secondAttribute="top" constant="-10" id="2kr-VO-U3P"/>
+                                            <constraint firstItem="qCb-BK-3Z1" firstAttribute="leading" secondItem="Jl9-GE-Ypw" secondAttribute="leading" id="90e-Tb-xT4"/>
+                                            <constraint firstItem="qCb-BK-3Z1" firstAttribute="centerY" secondItem="Jl9-GE-Ypw" secondAttribute="centerY" id="cd0-6m-Owx"/>
+                                            <constraint firstAttribute="trailing" secondItem="qCb-BK-3Z1" secondAttribute="trailing" id="qPU-Kc-ZeA"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oTZ-G6-fBk" customClass="View2" customModule="MultiViewApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="108" width="665" height="108"/>
+                                        <subviews>
+                                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i35-9U-YW7">
+                                                <rect key="frame" x="0.0" y="-10" width="673" height="127"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </webView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="i35-9U-YW7" firstAttribute="centerY" secondItem="oTZ-G6-fBk" secondAttribute="centerY" id="13U-ao-jjF"/>
+                                            <constraint firstItem="i35-9U-YW7" firstAttribute="leading" secondItem="oTZ-G6-fBk" secondAttribute="leading" id="KFv-N7-MOi"/>
+                                            <constraint firstAttribute="trailing" secondItem="i35-9U-YW7" secondAttribute="trailing" constant="-8" id="WGs-t3-wSv"/>
+                                            <constraint firstItem="i35-9U-YW7" firstAttribute="top" secondItem="oTZ-G6-fBk" secondAttribute="top" constant="-10" id="yAz-ht-F9i"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15w-3B-r9T" customClass="View3" customModule="MultiViewApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="216" width="665" height="108"/>
+                                        <subviews>
+                                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9R-Bv-4pO">
+                                                <rect key="frame" x="-4" y="0.0" width="673" height="127"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </webView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="w9R-Bv-4pO" secondAttribute="bottom" constant="-19" id="9dc-hT-tph"/>
+                                            <constraint firstItem="w9R-Bv-4pO" firstAttribute="leading" secondItem="15w-3B-r9T" secondAttribute="leading" constant="-4" id="EUD-5O-2A4"/>
+                                            <constraint firstItem="w9R-Bv-4pO" firstAttribute="centerX" secondItem="15w-3B-r9T" secondAttribute="centerX" id="Thu-8L-QvM"/>
+                                            <constraint firstItem="w9R-Bv-4pO" firstAttribute="top" secondItem="15w-3B-r9T" secondAttribute="top" id="sM0-Rc-vws"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oTZ-G6-fBk" firstAttribute="centerY" secondItem="Pmn-81-BWq" secondAttribute="centerY" id="Czg-6q-yXT"/>
+                                    <constraint firstItem="oTZ-G6-fBk" firstAttribute="top" secondItem="Pmn-81-BWq" secondAttribute="top" constant="108" id="ZSa-dM-hDz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pmn-81-BWq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="7Pl-Kd-nji"/>
+                            <constraint firstItem="Pmn-81-BWq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="G5k-O2-oc7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pmn-81-BWq" secondAttribute="trailing" constant="2" id="SbB-7j-WfA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pmn-81-BWq" secondAttribute="bottom" constant="22" id="bZ8-xx-Zcd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="view1" destination="qCb-BK-3Z1" id="c5Y-Oo-cIe"/>
+                        <outlet property="view2" destination="i35-9U-YW7" id="tvl-T7-T8R"/>
+                        <outlet property="view3" destination="w9R-Bv-4pO" id="VGr-ht-ART"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="20"/>
+        </scene>
+    </scenes>
+</document>
